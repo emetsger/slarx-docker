@@ -26,3 +26,4 @@ volumes:
 
   slarxdata:
     driver: local
+
