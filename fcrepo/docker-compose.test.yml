@@ -10,8 +10,6 @@ services:
       - assets
 
   assets:
-    build:
-      context: ./assets
     image: slarx/assets:latest
     container_name: assets
     volumes:
