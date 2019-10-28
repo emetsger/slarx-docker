@@ -8,3 +8,16 @@ services:
     command: run_tests.sh
     depends_on:
       - assets
+
+  assets:
+    build:
+      context: ./assets
+    image: slarx/assets:latest
+    container_name: assets
+    volumes:
+      - slarxdata:/data
+
+volumes:
+
+  slarxdata:
+    driver: local
