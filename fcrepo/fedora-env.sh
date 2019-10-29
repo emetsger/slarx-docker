@@ -1,5 +1,5 @@
 #!/bin/ash
-
+set -vx
 FCREPO_USER=fedoraAdmin
 FCREPO_PASS=moo
 FCREPO_BASE_URI=http://localhost:8080/fcrepo/rest

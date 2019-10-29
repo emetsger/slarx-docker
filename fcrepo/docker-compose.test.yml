@@ -5,7 +5,7 @@ services:
   sut:
     build:
       context: .
-    command: run_tests.sh
+    command: /run_tests.sh
     depends_on:
       - assets
 
