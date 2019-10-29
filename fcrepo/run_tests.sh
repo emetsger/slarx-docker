@@ -17,6 +17,9 @@ cat /tmp/run_tests.out
 
 if [ $? -ne 0 ] ;
 then
+    echo "Tests completed with error."
     echo "Exiting."
     exit 1;
 fi
+
+echo "Tests completed successfully."

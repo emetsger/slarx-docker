@@ -30,6 +30,8 @@ then
   sleep 2
   apk -q del curl
   killall java
+  echo "Initialization complete..."
 fi
 
+echo "Starting Fedora..."
 java -jar start.jar -Djetty.http.port=${JETTY_PORT}
