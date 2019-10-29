@@ -19,7 +19,7 @@ then
   apk -q --no-progress add curl
   java -jar start.jar -Djetty.http.port=8080 2>/dev/null 1>/dev/null &
 
-  fedora_up 10
+  fedora_up 30
 
   if [ $? -ne 0 ] ;
   then
